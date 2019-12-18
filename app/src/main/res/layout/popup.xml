@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_id">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:padding="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="enter item"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"/>
+            <EditText
+                android:id="@+id/groceryItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter grocery item"
+                android:layout_below="@id/tile"/>
+            <EditText
+                android:id="@+id/groceryQty"
+                android:layout_below="@id/groceryItem"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:hint="Quantity hint"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:text="Save"
+                android:textStyle="bold"
+                android:layout_below="@id/groceryQty"
+                android:background="@color/colorAccent"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
